@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Amiri', serif;
+  background: url(bgimg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.quote-marquee {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #f0e68c;
+}
+
+.container {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.counter-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  margin: auto;
+  max-width: 320px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  animation: zoomIn 1.5s ease;
+}
+
+.count {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  font-size: 1em;
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2e8b57;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.buttons button:hover {
+  background-color: #3cb371;
+  transform: scale(1.05);
+}
+
+.select-increment {
+  margin-bottom: 20px;
+}
+
+.select-increment select {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0;}
+  to { transform: scale(1); opacity: 1;}
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .count {
+    font-size: 3em;
+  }
+
+  .buttons button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .select-increment {
+    font-size: 0.9em;
+  }
+}

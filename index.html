@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tasbih Counter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="quote-marquee">
+    <marquee scrollamount="4">
+      Daily Dhikr Reminder: سبحان الله • الحمد لله • لا إله إلا الله • الله أكبر • استغفر الله • لا حول ولا قوة إلا بالله • اللهم صل على محمد                      
+      Daily Quotes: "Tawbah is cleaning of heart and dhikr is the feeding of the heart."            "For everything there is a polish, and the polish for  the hearts is Dhikr (remembrance) of Allah"
+    </marquee>
+
+  </div>
+
+  <div class="container">
+    <h1 class="title">📿 Digital Tasbih</h1>
+
+    <div class="select-increment">
+      <label for="step">Select Increment:</label>
+      <select id="step">
+        <option value="1">+1</option>
+        <option value="5">+5</option>
+        <option value="10">+10</option>
+        <option value="50">+50</option>
+        <option value="100">+100</option>
+      </select>
+    </div>
+
+    <div class="counter-box">
+      <div class="count" id="count">0</div>
+      <div class="buttons">
+        <button onclick="increment()">+ Count</button>
+        <button onclick="decrement()">- Minus</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>“SubhanAllah • Alhamdulillah • Allahu Akbar”</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
